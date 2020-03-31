@@ -15,6 +15,8 @@ export const users = writable(localStorageUsers());
 
 export const cardsStore = writable(cards);
 
+export const storyState = writable(0);
+
 function appState() {
 	const { subscribe, set } = writable(0);
 

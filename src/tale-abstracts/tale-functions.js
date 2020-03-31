@@ -4,8 +4,10 @@ export const taleFunctions = [
       "description": 'sytuacja początkowa',
       "variants": [
         {
-          "process": 'sytuacja początkowa',
-          "relationIds": [2, 3, 4, 5, 6, 6, 6, 7, 7]
+          "process": 'cards.function.1.process.1',
+          "relationIds": [2, 3, 4, 5, 6, 7],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -14,8 +16,10 @@ export const taleFunctions = [
       "description": 'Odejście kogoś z rodziny',
       "variants": [
         {
-          "process": 'Odejście kogoś z rodziny',
-          "relationIds": [3, 6, 7]
+          "process": 'cards.function.2.process.1',
+          "relationIds": [3, 6, 7],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -24,12 +28,16 @@ export const taleFunctions = [
       "description": 'Zakaz i naruszenie zakazu',
       "variants": [
         {
-          "process": 'Zakaz i naruszenie zakazu',
-          "relationIds": [6, 7]
+          "process": 'cards.function.3.process.1',
+          "relationIds": [6, 7],
+          "maxRepeat": 0,
+          "repeated": 0
         },
         {
-          "process": 'Nakaz i wykonanie nakazu',
-          "relationIds": [6]
+          "process": 'cards.function.3.process.2',
+          "relationIds": [6],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -38,8 +46,10 @@ export const taleFunctions = [
       "description": 'Poszukiwanie i otrzymanie informacji bohater/złoczyńca',
       "variants": [
         {
-          "process": 'Poszukiwanie i otrzymanie informacji bohater/złoczyńca',
-          "relationIds": [6, 7, 8]
+          "process": 'cards.function.4.process.1',
+          "relationIds": [6, 7, 8],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -48,8 +58,10 @@ export const taleFunctions = [
       "description": 'Podstęp złoczyńcy i mimowolna pomoc bohatera',
       "variants": [
         {
-          "process": 'Podstęp złoczyńcy i mimowolna pomoc bohatera',
-          "relationIds": [6]
+          "process": 'cards.function.5.process.1',
+          "relationIds": [6],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -58,8 +70,10 @@ export const taleFunctions = [
       "description": 'Szkodzenie',
       "variants": [
         {
-          "process": 'Szkodzenie',
-          "relationIds": [8, 9]
+          "process": 'cards.function.6.process.1',
+          "relationIds": [8, 9],
+          "maxRepeat": 2,
+          "repeated": 0
         }
       ] 
     },
@@ -68,8 +82,10 @@ export const taleFunctions = [
       "description": 'Brak',
       "variants": [
         {
-          "process": 'Brak czegoś / kogoś',
-          "relationIds": [8, 9]
+          "process": 'cards.function.7.process.1',
+          "relationIds": [8, 9],
+          "maxRepeat": 2,
+          "repeated": 0
         }
       ] 
     },
@@ -78,8 +94,10 @@ export const taleFunctions = [
       "description": 'apel o pomoc bohatera',
       "variants": [
         {
-          "process": 'apel o pomoc | wysłanie bohatera',
-          "relationIds": [9]
+          "process": 'cards.function.8.process.1',
+          "relationIds": [9],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -88,8 +106,10 @@ export const taleFunctions = [
       "description": 'Wyruszenie bohatera z domu',
       "variants": [
         {
-          "process": 'Wyruszenie bohatera z domu',
-          "relationIds": [10, 10 ,10, 11, 12]
+          "process": 'cards.function.9.process.1',
+          "relationIds": [10, 10 ,10, 11, 12],
+          "maxRepeat": 2,
+          "repeated": 0
         }
       ] 
     },
@@ -98,16 +118,22 @@ export const taleFunctions = [
       "description": 'Pierwsza funkcja darczyńcy',
       "variants": [
         {
-          "process": 'poddanie bohatera próbie, przejście próby otrzymanie magicznego pomocnika',
-          "relationIds": [11, 13, 14]
+          "process": 'cards.function.10.process.1',
+          "relationIds": [11, 13, 14],
+          "maxRepeat": 2,
+          "repeated": 0
         },
         {
-          "process": 'poddanie bohatera próbie, przejście próby otrzymanie magicznego środka',
-          "relationIds": [11, 13, 14]
+          "process": 'cards.function.10.process.2',
+          "relationIds": [11, 13, 14],
+          "maxRepeat": 2,
+          "repeated": 0
         },
         {
-          "process": 'poddanie bohatera próbie, nie przejście próby dar nie zostaje przekazany',
-          "relationIds": [10, 8]
+          "process": 'cards.function.10.process.3',
+          "relationIds": [10, 8],
+          "maxRepeat": 2,
+          "repeated": 0
         }
       ]
     },
@@ -116,8 +142,10 @@ export const taleFunctions = [
       "description": 'Przemieszczenie do celu',
       "variants": [
         {
-          "process": 'Przemieszczenie do celu',
-          "relationIds": [12, 13]
+          "process": 'cards.function.11.process.1',
+          "relationIds": [12, 13],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     },
@@ -126,20 +154,28 @@ export const taleFunctions = [
       "description": 'Walka ze złoczyńcą / trudne zadanie',
       "variants": [
         {
-          "process": "walka ze złoczyńcą | nacechowanie | wygrana",
-          "relationIds": [13, 14, 17, 19, 20]
+          "process": "cards.function.12.process.1",
+          "relationIds": [13, 14, 17, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         },
         {
-          "process":  "walka ze złoczyńcą | wygrana",
-          "relationIds": [13, 14, 17, 19, 20]
+          "process":  "cards.function.12.process.2",
+          "relationIds": [13, 14, 17, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         },
         {
-          "process": "trudne zadanie | nacechowanie | wykonanie zadania",
-          "relationIds": [13, 14, 16, 17, 18, 19, 20]
+          "process": "cards.function.12.process.3",
+          "relationIds": [13, 14, 16, 17, 18, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         },
         {
-          "process": "trudne zadanie | wykonanie zadania",
-          "relationIds": [13, 14, 16, 17, 18, 19, 20]
+          "process": "cards.function.12.process.4",
+          "relationIds": [13, 14, 16, 17, 18, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         },
       ]
     },
@@ -148,8 +184,10 @@ export const taleFunctions = [
       "description": 'Usunięcie nieszczęścia lub braku',
       "variants": [
         {
-          "process": 'Usunięcie nieszczęścia lub braku',
-          "relationIds": [6, 14, 18, 19, 20]
+          "process": 'cards.function.13.process.1',
+          "relationIds": [6, 14, 18, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
@@ -158,8 +196,10 @@ export const taleFunctions = [
       "description": 'Powrót',
       "variants": [
         {
-          "process": 'Powrót',
-          "relationIds": [null, 6, 15, 20]
+          "process": 'cards.function.14.process.1',
+          "relationIds": [null, 6, 15],
+          "maxRepeat": 1,
+          "repeated": 0
         }
       ]
     },
@@ -168,8 +208,10 @@ export const taleFunctions = [
       "description": 'Ściganie bohatera i ratunek bohatera',
       "variants": [
         {
-          "process": 'Ściganie bohatera i ratunek bohatera',
-          "relationIds": [null, 6, 17, 19, 20]
+          "process": 'cards.function.15.process.1',
+          "relationIds": [null, 6, 17, 19, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
@@ -178,22 +220,28 @@ export const taleFunctions = [
       "description": 'Nierozpoznane przybycie',
       "variants": [
         {
-          "process": 'Nierozpoznane przybycie',
-          "relationIds": [6, 18, 19]
+          "process": 'cards.function.16.process.1',
+          "relationIds": [18, 19],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
     {
       "id": 17,
-      "description": 'Rroszczenia fałszywego bohatera i zdemaskowanie',
+      "description": 'Roszczenia fałszywego bohatera i zdemaskowanie',
       "variants": [
         {
-          "process": "roszczenia fałszywego bohatera | rozpoznanie bohatera, zdemaskowanie fałszywego",
-          "relationIds": [19]
+          "process": "cards.function.17.process.1",
+          "relationIds": [19],
+          "maxRepeat": 0,
+          "repeated": 0
         },
         {
-          "process": "rozpoznanie bohatera, zdemaskowanie fałszywego",
-          "relationIds": [19]
+          "process": "cards.function.17.process.2",
+          "relationIds": [19],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
@@ -202,8 +250,10 @@ export const taleFunctions = [
       "description": 'Transfiguracja',
       "variants": [
         {
-          "process": 'Transfiguracja',
-          "relationIds": [16, 20]
+          "process": 'cards.function.18.process.1',
+          "relationIds": [16, 20],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
@@ -212,8 +262,10 @@ export const taleFunctions = [
       "description": 'Ukaranie fałszywego bohatera lub złoczyńcy',
       "variants": [
         {
-          "process": 'Ukaranie fałszywego bohatera lub złoczyńcy',
-          "relationIds": [20]
+          "process": 'cards.function.19.process.1',
+          "relationIds": [20],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ]
     },
@@ -222,8 +274,10 @@ export const taleFunctions = [
       "description": 'Wesele i objecie tronu',
       "variants": [
         {
-          "process": 'Wesele i objecie tronu',
-          "relationIds": [null]
+          "process": 'cards.function.20.process.1',
+          "relationIds": [null],
+          "maxRepeat": 0,
+          "repeated": 0
         }
       ] 
     }

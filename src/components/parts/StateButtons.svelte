@@ -1,14 +1,15 @@
 <script>
     import { state } from '../../stores/stores.js';
+    import { _ } from 'svelte-i18n';
 
-    const stateBtns = ['Widok logowania', 'Widok kart', 'Widok generowania kart'];
+    const stateBtns = ['state.btn.users', 'state.btn.cards', 'state.btn.generateCards'];
 </script>
 
 <section>
     {#each stateBtns as btn, i}
     <button on:click={e => state.set(i)}
             class={$state === i ? 'active' : ''}>
-            { btn }
+            {$_(btn)}
     </button>
     {/each}
 </section>
