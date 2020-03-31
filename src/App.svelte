@@ -2,14 +2,17 @@
 	import AddRemoveUser from './components/views/AddRemoveUser.svelte';
 	import GenerateCards from './components/views/GenerateCards.svelte';
 	import CardsList from './components/views/CardsList.svelte';
-	import StateButtons from './components/parts/StateButtons.svelte';
-	import { state } from './stores/stores.js';
+  import StateButtons from './components/parts/StateButtons.svelte';
+  import Nav from './components/parts/Nav.svelte'
+  import { state } from './stores/stores.js';
 	import { fade } from 'svelte/transition';
-	import { afterUpdate } from 'svelte';
+  import { afterUpdate } from 'svelte';
 
-	let isLoader = false;
+  let isLoader = false;
 
 </script>
+
+<Nav />
 
 <main>
 	<StateButtons />
